@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cf63e5c-01d1-4210-8b87-b4d902ebcb88" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/3/3.10/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/3/3.10/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3/3.11/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/3/3.11/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3/3.6/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/3/3.6/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3/3.7/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/3/3.7/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3/3.8/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/3/3.8/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3/3.9/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/3/3.9/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3/3.14/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/3/3.14/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,7 +15,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/3/3.15/index.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,9 +37,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/4/4.4/index.html" />
-        <option value="$PROJECT_DIR$/4/4.5/index.html" />
-        <option value="$PROJECT_DIR$/4/4.6/index.html" />
         <option value="$PROJECT_DIR$/4/4.7/index.html" />
         <option value="$PROJECT_DIR$/4/4.8/index.html" />
         <option value="$PROJECT_DIR$/4/4.9/index.html" />
@@ -87,6 +85,9 @@
         <option value="$PROJECT_DIR$/3/3.9/index.js" />
         <option value="$PROJECT_DIR$/3/3.10/index.js" />
         <option value="$PROJECT_DIR$/3/3.11/index.js" />
+        <option value="$PROJECT_DIR$/3/3.12/index.js" />
+        <option value="$PROJECT_DIR$/3/3.13/index.js" />
+        <option value="$PROJECT_DIR$/3/3.14/index.js" />
       </list>
     </option>
   </component>
@@ -125,7 +126,7 @@
               <item name="book-javascript-the-examples-and-tasks" type="b2602c69:ProjectViewProjectNode" />
               <item name="book-javascript-the-examples-and-tasks" type="462c0819:PsiDirectoryNode" />
               <item name="3" type="462c0819:PsiDirectoryNode" />
-              <item name="3.12" type="462c0819:PsiDirectoryNode" />
+              <item name="3.15" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -188,15 +189,16 @@
       <workItem from="1521305894777" duration="1015000" />
       <workItem from="1522445304623" duration="1488000" />
       <workItem from="1522609413742" duration="4577000" />
-      <workItem from="1522695639003" duration="4200000" />
+      <workItem from="1522695639003" duration="4800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24946000" />
+    <option name="totallyTimeSpent" value="25546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="842" y="0" width="838" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.250918" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -248,34 +250,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/4/4.12/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4/4.13/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4/4.14/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4/4.15/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/4/4.16/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -592,6 +566,30 @@
           <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.12/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.13/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.14/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3/3.15/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
