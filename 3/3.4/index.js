@@ -1,8 +1,8 @@
 function show() {
-    myText = "Глобальная переменная"
-    document.write(myText + "<br>")
+    myText = "Глобальная переменная";
+    document.write(myText + "<br>");
 }
 
-show()
+show();
 
-document.write(myText + "<br>")
+document.write(myText + "<br>");
