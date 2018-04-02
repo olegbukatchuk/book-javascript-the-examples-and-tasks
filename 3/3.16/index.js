@@ -1,19 +1,19 @@
 function first() {
-    document.write("Первая функция<br>")
+    document.write("Первая функция<br>");
 }
 
 function second() {
-    document.write("Вторая функция<br>")
+    document.write("Вторая функция<br>");
 }
 
-first()
-second()
+first();
+second();
 
-var tmp
+var tmp;
 
-tmp = first
-first = second
-second = tmp
+tmp = first;
+first = second;
+second = tmp;
 
-first()
-second()
+first();
+second();
