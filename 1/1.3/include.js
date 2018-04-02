@@ -1,3 +1,3 @@
-var txt
-txt="Используем переменную."
-document.write(txt)
+var txt;
+txt="Используем переменную.";
+document.write(txt);

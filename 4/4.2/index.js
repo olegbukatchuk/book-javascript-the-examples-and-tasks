@@ -1,13 +1,16 @@
-var obj = {name: "Иван Петров", age: 38}
+var obj = {
+    name: "Иван Петров",
+    age: 38
+};
 
-show(obj)
+show(obj);
 
-obj.name="Петр Иванов"
-obj.age++
+obj.name="Петр Иванов";
+obj.age++;
 
-show(obj)
+show(obj);
 
 function show(a) {
-    document.write("<b>Имя</b>: " + a.name + "<br>")
-    document.write("<b>Возраст</b>: " + a.age + "<br>")
+    document.write("<b>Имя</b>: " + a.name + "<br>");
+    document.write("<b>Возраст</b>: " + a.age + "<br>");
 }
