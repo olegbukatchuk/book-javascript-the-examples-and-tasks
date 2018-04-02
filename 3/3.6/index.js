@@ -1,13 +1,14 @@
-var myText="Глобальная переменная"
-document.write(myText+"<br>")
+var myText = "Глобальная переменная";
+document.write(myText + "<br>");
 
 function show() {
-    var myText="Локальная переменная"
-    window.myText="Переменная с намёком на глобальность"
-    document.write(myText + "<br>")
-    document.write(window.myText + "<br>")
+    var myText = "Локальная переменная";
+    window.myText = "Переменная с намёком на глобальность";
+
+    document.write(myText + "<br>");
+    document.write(window.myText + "<br>");
 }
 
-show()
+show();
 
-document.write(myText + "<br>")
+document.write(myText + "<br>");

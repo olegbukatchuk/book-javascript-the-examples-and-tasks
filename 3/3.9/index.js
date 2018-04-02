@@ -1,24 +1,21 @@
 function f(x) {
-    var argType
+    var argType;
 
-    argType = typeof(x)
+    argType = typeof(x);
 
-    switch(argType) {
-        case "number":
-            document.write("Числовой аргумент<br>")
-            break
-        case "string":
-            document.write("Текстовый аргумент<br>")
-            break
-        default:
-            document.write("Не текст и не число<br>")
+    switch (argType) {
+        case "number": document.write("Числовой аргумент<br>");
+        break;
+        case "string": document.write("Текстовый аргумент<br>");
+        break;
+        default: document.write("Не текст и не число<br>");
     }
 }
 
-f("текст")
-f(123)
-f(10.5)
-f(true)
+f("текст");
+f(123);
+f(10.5);
+f(true);
 
-var a
-f(a)
+var a;
+f(a);

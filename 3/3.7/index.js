@@ -1,9 +1,9 @@
-var x="Альфа"
+var x = "Альфа";
 
-show("Браво")
+show("Браво");
 
-function show(x){
-    document.write("<h4>Выполнение функции</h4>")
-    document.write("Аргумент: " + x + "<br>")
-    document.write("Переменная: " + window.x + "<br>")
+function show(x) {
+    document.write("<h4>Выполнение функции</h4>");
+    document.write("Аргумент: " + x + "<br>");
+    document.write("Переменная: " + window.x + "<br>");
 }
