@@ -1,14 +1,15 @@
-var myText="Глвальная переменная"
+var myText = "Глвальная переменная";
 
-document.write(myText+"<br>")
+document.write(myText + "<br>");
 
 function show() {
-    var myText
-    myText="Локальная переменная"
+    var myText;
 
-    document.write(myText+"<br>")
+    myText = "Локальная переменная";
+
+    document.write(myText + "<br>");
 }
 
-show()
+show();
 
-document.write(myText+"<br>")
+document.write(myText + "<br>");
