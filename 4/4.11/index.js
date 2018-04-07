@@ -37,5 +37,5 @@ function showAll() {
     X.show("X");
     A.show("A");
     B.show("B");
-    document.write("<hr>")
+    document.write("<hr>");
 }
