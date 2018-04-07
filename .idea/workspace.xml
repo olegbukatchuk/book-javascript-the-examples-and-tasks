@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cf63e5c-01d1-4210-8b87-b4d902ebcb88" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/4/4.10/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/4/4.10/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4/4.11/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/4/4.11/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,16 +17,16 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/4/4.10/index.js">
+        <entry file="file://$PROJECT_DIR$/4/4.11/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+            <state relative-caret-position="108">
+              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/4/4.10/index.html">
+        <entry file="file://$PROJECT_DIR$/4/4.11/index.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -46,7 +46,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/4/4.19/index.html" />
         <option value="$PROJECT_DIR$/4/4.20/index.html" />
         <option value="$PROJECT_DIR$/4/4.21/index.html" />
         <option value="$PROJECT_DIR$/4/4.22/index.html" />
@@ -97,6 +96,7 @@
         <option value="$PROJECT_DIR$/4/4.9/index.js" />
         <option value="$PROJECT_DIR$/4/4.8/index.js" />
         <option value="$PROJECT_DIR$/4/4.10/index.js" />
+        <option value="$PROJECT_DIR$/4/4.11/index.js" />
       </list>
     </option>
   </component>
@@ -130,12 +130,6 @@
               <item name="book-javascript-the-examples-and-tasks" type="b2602c69:ProjectViewProjectNode" />
               <item name="book-javascript-the-examples-and-tasks" type="462c0819:PsiDirectoryNode" />
               <item name="4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book-javascript-the-examples-and-tasks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book-javascript-the-examples-and-tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="4" type="462c0819:PsiDirectoryNode" />
-              <item name="4.10" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book-javascript-the-examples-and-tasks" type="b2602c69:ProjectViewProjectNode" />
@@ -276,12 +270,12 @@
       <workItem from="1521305894777" duration="1015000" />
       <workItem from="1522445304623" duration="1488000" />
       <workItem from="1522609413742" duration="4577000" />
-      <workItem from="1522695639003" duration="8069000" />
+      <workItem from="1522695639003" duration="8448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28815000" />
+    <option name="totallyTimeSpent" value="29194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="606" y="0" width="1074" height="1050" extended-state="6" />
@@ -337,20 +331,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/1/1.6/include.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2/2.1/include.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2/2.2/include.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -660,6 +640,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/4/4.10/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/4/4.10/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -667,7 +650,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/4/4.10/index.html">
+    <entry file="file://$PROJECT_DIR$/4/4.11/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4/4.11/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
