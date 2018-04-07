@@ -2,13 +2,13 @@ var X = {
     color: "желтый",
     number: 123,
     show: function(arg) {
-        document.write("<b>" + arg + "</b>: ")
+        document.write("<b>" + arg + "</b>:");
         for (var s in this) {
             if (s != "show") {
-                document.write(s + " -> " + this[s] + " | ")
+                document.write(s + " -> " + this[s] + " | ");
             }
         }
-        document.write("<br>")
+        document.write("<br>");
     }
 };
 
