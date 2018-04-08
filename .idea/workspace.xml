@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cf63e5c-01d1-4210-8b87-b4d902ebcb88" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/5/5.10/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.10/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.11/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.11/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.12/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.12/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.13/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.13/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.2/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.3/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.3/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.4/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.4/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.5/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.5/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.6/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.6/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.7/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.7/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.8/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.8/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.9/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5/5.9/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6/6.1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6/6.1/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6cf63e5c-01d1-4210-8b87-b4d902ebcb88" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -302,12 +274,12 @@
       <workItem from="1521305894777" duration="1015000" />
       <workItem from="1522445304623" duration="1488000" />
       <workItem from="1522609413742" duration="4577000" />
-      <workItem from="1522695639003" duration="13062000" />
+      <workItem from="1522695639003" duration="13271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33808000" />
+    <option name="totallyTimeSpent" value="34017000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="606" y="0" width="1074" height="1050" extended-state="6" />
