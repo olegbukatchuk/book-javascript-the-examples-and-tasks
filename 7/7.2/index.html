@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Листинг 7.2</title>
+        <script type="text/javascript">
+        function findSum(n) {
+            var s = 0;
+            for (var k = 1; k <= n; k++) {
+                s += k;
+            }
+            return s;
+        }
+
+        function get() {
+            var n;
+            n = parseInt(prompt("Укажите число:"));
+            return n;
+        } </script>
+    </head>
+    <body>
+        <h3>Листинг 7.2</h3><hr>
+        <a href="javascript: var n = get(); alert('1+2+...+' + n + '=' + findSum(n))">
+            Вычислить сумму натуральных чисел</a>
+    </body>
+</html>
