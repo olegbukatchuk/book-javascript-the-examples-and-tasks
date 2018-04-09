@@ -18,7 +18,7 @@ for (var k = 0; k < A.length; k++) {
             throw new Error("Число делится на три");
         }
     } catch(e) {
-        document.write(e.message)
+        document.write(e.message);
     }
-    document.write("<hr>")
+    document.write("<hr>");
 }
