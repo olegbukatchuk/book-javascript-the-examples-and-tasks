@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Листинг 8.1</title>
+    <script type="text/javascript">
+        var msgA="В поле вводится текст. Кнопка <b>Применить</b> " +
+            "Позволяет вставить текст в документ. Кнопка <b>Разблокировать</b> " +
+            "делает доступным поле ввода и кнопку <b>Применить</b>.";
+        var msgB = "Введите текств поле ввода и щелкните кнопку <b>Применить</b>.";
+        var msgC = "Для отмены блокировки поля и кнопки <b>Применить</b> щелкните кнопку" +
+            " <b>Разблокировать</b>.";
+        var tf, ab, ub, mt, mp;
+        window.onload = function() {
+            tf = document.getElementById("textField");
+            ab = document.getElementById("applyButton");
+            ub = document.getElementById("unlockButton");
+            mt = document.getElementById("mytext");
+            mp = document.getElementById("myprompt");
+            setColor(false);
+            tf.value = "";
+            tf.disabled = false;
+            ab.disabled = false;
+            ub.disabled = true;
+            mp.innerHTML = msgA;
+            tf.onmouseover = function() {
+                if (!this.disabled) {
+                    setColor(true);
+                }
+            };
+            tf.onmouseout = function() {
+                if (!this.disabled) {
+                    setColor(false);
+                }
+            };
+            ab.onclick = function() {
+                mt.innerHTML = tf.value;
+                tf.disabled = true;
+                ub.disabled = false;
+                ab.disabled = true;
+            };
+            ab.onmouseover = function() {
+                if (!this.disabled) {
+                    applyPrompt(msgB);
+                }
+            };
+            ab.onmouseout = function() {
+                if (!this.disabled) {
+                    applyPrompt(msgA);
+                }
+            };
+            ub.onclick = function() {
+                tf.value = "";
+                mt.innerHTML = "";
+                tf.disabled = false;
+                ab.disabled = false;
+                ub.disabled = true;
+            };
+            ub.onmouseover = function() {
+                if (!this.disabled) {
+                    applyPrompt(msgC);
+                }
+            };
+            ub.onmouseout = function() {
+                if (!this.disabled) {
+                    applyPrompt(msgA);
+                }
+            }
+        };
+        function setColor(arg) {
+            if(arg) {
+                tf.style.backgroundColor = "yellow";
+                tf.style.borderColor = "red";
+            } else {
+                tf.style.backgroundColor = "white";
+                tf.style.borderColor = "gray";
+            }
+        }
+        function applyPrompt(msg) {
+            mp.innerHTML = msg;
+        }
+    </script>
+     </head>
+    <body>
+        <h3>Листинг 8.1</h3><hr>
+        <b>Поле ввода содержит такой текст</b>:</b><br>
+        <i id="mytext" style="font-size:25pt;color:red;"></i><br>
+        <input type="text" id="textField" size="62"><br>
+        <input type="button" id="applyButton" value="Применить" style="width:200px;height:30px;">
+        <button id="unlockButton" style="width:200px;height:30px;">Разблокировать̈</button>
+        <p id="myprompt"></p>
+    </body>
+</html>
