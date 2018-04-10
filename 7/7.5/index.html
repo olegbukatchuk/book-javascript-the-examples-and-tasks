@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Листинг 7.5</title>
+        <script type="text/javascript">
+            function openWindow() {
+                if (window.mywindow && !mywindow.closed) {
+                    window.alert("Документ уже открыт");
+                } else {
+                    window.mywindow = window.open("myhello.html");
+                }
+            }
+            function closeWindow() {
+                if (window.mywindow && !mywindow.closed) {
+                    mywindow.close();
+                    window.mywindow = null;
+                } else {
+                    window.alert("Окно уже закрыто");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Листинг 7.5</h3><hr>
+        <b>Открытие и закрытие окна</b><br>
+        <a href="javascript:openWindow()">Открыть файл myhello.html</a><br>
+        <a href="javascript:closeWindow()">Закрыть окно с файлом myhello.html</a>
+    </body>
+</html>
