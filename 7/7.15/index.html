@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Листинг 7.15</title>
+    </head>
+    <body>
+        <h3>Листинг 7.15</h3><hr>
+        <h4>Исчпользование метода <code>write()</code></h4>
+        <script type="text/javascript">
+            var k;
+            var mynums = ["один", "два", "три", "четыре", "пять"];
+            document.write("Аргументы метода: ", 123, " и <b style='font-size:120%;'>", 321, "</b><br>");
+            for (k = 0; k < mynums.length; k++) {
+                document.write(mynums[k], " ");
+            }
+        </script>
+        <h4>Использование метода <code>writeln()</code></h4>
+        <pre>
+        <script>
+            document.writeln("Аргументы метода: ", 123, " и <b style='font-size:120%;'>", 321, "</b>");
+            for (k = 0; k < mynums.length; k++) {
+                document.writeln(mynums[k]);
+            }
+        </script>
+        </pre>
+    </body>
+</html>
