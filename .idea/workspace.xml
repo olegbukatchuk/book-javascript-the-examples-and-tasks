@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cf63e5c-01d1-4210-8b87-b4d902ebcb88" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/7/7.6/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/7.7/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7/7.8/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,10 +17,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/7/7.7/index.html">
+        <entry file="file://$PROJECT_DIR$/7/7.8/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="378">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -43,7 +41,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/5/5.4/index.js" />
         <option value="$PROJECT_DIR$/5/5.5/index.js" />
         <option value="$PROJECT_DIR$/5/5.6/index.js" />
         <option value="$PROJECT_DIR$/5/5.7/index.js" />
@@ -94,6 +91,7 @@
         <option value="$PROJECT_DIR$/7/7.5/index.html" />
         <option value="$PROJECT_DIR$/7/7.6/index.html" />
         <option value="$PROJECT_DIR$/7/7.7/index.html" />
+        <option value="$PROJECT_DIR$/7/7.8/index.html" />
       </list>
     </option>
   </component>
@@ -132,7 +130,7 @@
               <item name="book-javascript-the-examples-and-tasks" type="b2602c69:ProjectViewProjectNode" />
               <item name="book-javascript-the-examples-and-tasks" type="462c0819:PsiDirectoryNode" />
               <item name="7" type="462c0819:PsiDirectoryNode" />
-              <item name="7.7" type="462c0819:PsiDirectoryNode" />
+              <item name="7.8" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -196,18 +194,18 @@
       <workItem from="1521305894777" duration="1015000" />
       <workItem from="1522445304623" duration="1488000" />
       <workItem from="1522609413742" duration="4577000" />
-      <workItem from="1522695639003" duration="30581000" />
+      <workItem from="1522695639003" duration="30912000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51327000" />
+    <option name="totallyTimeSpent" value="51658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="606" y="0" width="1074" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16904083" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16904083" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32983193" />
@@ -265,13 +263,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/5/5.9/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/5/5.9/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -617,6 +608,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7/7.8/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Листинг 7.8</title>
+        <script type="text/javascript">
+            function showParameters() {
+                var txt = "Внутренние ширина и высота: " + window.innerWidth;
+                txt += " и " + window.innerHeight + "<br>";
+                txt += "Внешние ширина и высота: " + window.outerWidth;
+                txt += " и " + window.outerHeight + "<br>";
+                mytext.innerHTML = txt;
+            }
+        </script>
+    </head>
+    <body onload="showParameters()" onresize="showParameters()">
+    <h3>Листинг 7.8</h3><hr> <b>Размеры окна</b><br>
+    <p id="mytext"></p>
+    <button onclick="alert('Координаты: '+window.screenX+' и '+window.screenY)">
+        Показать координаты окна </button>
+    </body>
+</html>
