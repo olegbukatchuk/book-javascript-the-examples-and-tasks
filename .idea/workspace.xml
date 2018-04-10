@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cf63e5c-01d1-4210-8b87-b4d902ebcb88" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/7/7.5/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7/7.6/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7/7.7/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,10 +19,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/7/7.5/index.html">
+        <entry file="file://$PROJECT_DIR$/7/7.7/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="58" lean-forward="true" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+            <state relative-caret-position="252">
+              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -41,8 +43,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/5/5.13/index.html" />
-        <option value="$PROJECT_DIR$/5/5.3/index.js" />
         <option value="$PROJECT_DIR$/5/5.4/index.js" />
         <option value="$PROJECT_DIR$/5/5.5/index.js" />
         <option value="$PROJECT_DIR$/5/5.6/index.js" />
@@ -92,6 +92,8 @@
         <option value="$PROJECT_DIR$/7/7.3/index.html" />
         <option value="$PROJECT_DIR$/7/7.4/index.html" />
         <option value="$PROJECT_DIR$/7/7.5/index.html" />
+        <option value="$PROJECT_DIR$/7/7.6/index.html" />
+        <option value="$PROJECT_DIR$/7/7.7/index.html" />
       </list>
     </option>
   </component>
@@ -130,7 +132,7 @@
               <item name="book-javascript-the-examples-and-tasks" type="b2602c69:ProjectViewProjectNode" />
               <item name="book-javascript-the-examples-and-tasks" type="462c0819:PsiDirectoryNode" />
               <item name="7" type="462c0819:PsiDirectoryNode" />
-              <item name="7.5" type="462c0819:PsiDirectoryNode" />
+              <item name="7.7" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -194,12 +196,12 @@
       <workItem from="1521305894777" duration="1015000" />
       <workItem from="1522445304623" duration="1488000" />
       <workItem from="1522609413742" duration="4577000" />
-      <workItem from="1522695639003" duration="30014000" />
+      <workItem from="1522695639003" duration="30581000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50760000" />
+    <option name="totallyTimeSpent" value="51327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="606" y="0" width="1074" height="1050" extended-state="6" />
@@ -258,31 +260,11 @@
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/7/7.5/index.html</url>
-          <line>4</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/5/5.8/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5/5.8/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/5/5.9/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -619,8 +601,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/7/7.5/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="58" lean-forward="true" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+        <state relative-caret-position="504">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7/7.6/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7/7.7/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
