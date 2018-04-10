@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Листинг 7.9</title>
+    </head>
+    <body>
+        <h3>Листинг 7.9</h3><hr>
+        <p id="mydata" style="font-family:arial;font-size:25pt;color:black;">
+            <b>Клавиша не нажата: черный текст на белом фоне</b>
+        </p><hr>
+        <b>Обратите внимание на цвет фона и текст, представленный выше.</b>
+        <script type="text/javascript">
+            window.onkeydown = function() {
+                document.body.style.backgroundColor = "yellow";
+                var mydata = document.getElementById("mydata");
+                mydata.style.color = "blue";
+                mydata.innerHTML = "<b>Нажата клавиша: синий текст на желтом фоне</b>"
+            };
+            window.onkeyup = function() {
+                document.body.style.backgroundColor = "white";
+                var mydata = document.getElementById("mydata");
+                mydata.style.color = "black";
+                mydata.innerHTML = "<b>Клавиша не нажата: черный тескт на белом фоне</b>"
+            };
+        </script>
+    </body>
+</html>
