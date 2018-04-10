@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Листинг 7.4</title>
+    </head>
+    <body>
+        <h3>Листинг 7.4</h3><hr>
+        <b>Выполнение команд.</b><br>
+        <script type="text/javascript">
+            while (window.confirm("Готовы ввести команду?")) {
+                var res;
+                res = window.prompt("Введите команду́");
+                if (res != null) {
+                    document.write(res + " = " + eval(res) + "<br>");
+                } else {
+                    break;
+                }
+            }
+            window.alert("Выполнение сценария завершено")
+        </script>
+    </body>
+</html>
