@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Листинг 7.12</title>
+        <script type="text/javascript">
+            var st;
+            var myblock;
+            window.onload = function() {
+                myblock = document.getElementById("myblock");
+                var num = 5;
+                var txt = "Через "+num+" после загрузки отображается сообщение ";
+                txt += "<button onclick='makeclick()'>Отменить</button>";
+                st = setTimeout(show, num * 1000, "Использован метод setTimeout()");
+                myblock.innerHTML = txt;
+            };
+            function show(str) {
+                alert(str);
+                myblock.innerHTML = "Сообщение было показано";
+            }
+            function makeclick() {
+                clearTimeout(st);
+                myblock.innerHTML = "Сообщение отображаться не будет";
+            }
+        </script>
+        </head>
+    <body>
+        <h3>Листинг 7.12</h3>
+        Используем методы <code>setTimeout()</code> и <code>clearTimeout()</code>.<br><hr>
+        <p id="myblock"></p><hr>
+    </body>
+</html>
