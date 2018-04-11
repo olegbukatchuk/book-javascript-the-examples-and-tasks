@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Листинг 9.2</title>
+        <script type="text/javascript">
+            var output;
+            var operand, operator;
+            var numState, pntState;
+            var ops = ["+", "-", "*", "/", "="];
+            var btn;
+            function btnPress(k) {
+                if (numState) {
+                    output.value = k;
+                    numState = false;
+                } else {
+                    if (output.value == "0") {
+                        output.value = k;
+                    } else {
+                        output.value += k;
+                    }
+                }
+            }
+            window.onload = function() {
+                btn = document.getElementById("btnC");
+                output = document.getElementById("myoutput");
+                output.disabled = true;
+                btn.onclick = function() {
+                    output.value = "0";
+                    pntState = true;
+                    numState = true;
+                    operator = "";
+                    operand = "";
+                }
+                document.getElementById("btnDot").onclick = function() {
+                    if (pntState) {
+                        if (numState) {
+                            output.value = "0.";
+                            numState = false;
+                        } else {
+                            output.value += ".";
+                        }
+                        pntState = false;
+                    }
+                };
+                for (var k = 0; k <= 9; k++) {
+                    document.getElementById("btn" + k).onclick = function() {
+                        btnPress(this.value);
+                    }
+                }
+                for(var p = 0; p < ops.length; p++) {
+                    document.getElementById("btn" + ops[p]).onclick = function() {
+                        if(operand != "" && operand != "Ошибка!") {
+                            var res = eval(operand + operator + output.value);
+                            if(res == "Infinity" || res == "-Infinity" || isNaN(res)) {
+                                operator = "";
+                                operand = "";
+                                output.value = "Ошибка!";
+                            } else {
+                                output.value = res;
+                                if (this.value == "=") {
+                                    operand = "";
+                                } else {
+                                    operand = res;
+                                    operator = this.value;
+                                }
+                            }
+                        } else {
+                            if (this.value != "=") {
+                                operator = this.value;
+                                operand = output.value;
+                            }
+                        }
+                        numState = true;
+                        pntState = true;
+                    }
+                }
+                document.getElementById("mycalc").onkeypress = function(evt) {
+                    var k;
+                    var nums = new Array(10);
+                    for (k = 0; k < nums.length; k++) {
+                        nums[k] = "" + k;
+                    }
+                    var symb = String.fromCharCode(evt.which);
+                    if (symb in nums) {
+                        btnPress(symb);
+                    } else {
+                        if(symb == ".") {
+                            document.getElementById("btnDot").click();
+                        } else {
+                            for (k = 0; k < ops.length; k++) {
+                                if (symb == ops[k]) {
+                                    document.getElementById("btn"+symb).click();
+                                    return;
+                                }
+                            }
+                        }
+                    }
+                }
+                btn.click();
+            }
+        </script>
+        <style type="text/css">
+            #mycalc table {
+                border-style: solid;
+                border-width: 3px;
+                border-color: #a0a0a0;
+                background-color: #f0f0f0;
+            }
+            #mycalc input[type="button"] {
+                font-size: 15px;
+                font-weight: bold;
+                height: 30px;
+                width: 50px;
+            }
+            #mycalc input[type="text"] {
+                height: 25px;
+                width: 145px;
+                background-color: white;
+                color: black;
+                font-size: 16px;
+                text-align: right;
+                padding: 2px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Листинг 9.2</h3><hr>
+        <form id="mycalc">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" id="myoutput">
+                        <input type="button" value="C" id="btnC">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-top:solid 1px #a0a0a0;">
+                        <input type="button" value="1" id="btn1">
+                        <input type="button" value="2" id="btn2">
+                        <input type="button" value="3" id="btn3">
+                        <input type="button" value="+" id="btn+">
+                        <br>
+                        <input type="button" value="4" id="btn4">
+                        <input type="button" value="5" id="btn5">
+                        <input type="button" value="6" id="btn6">
+                        <input type="button" value="-" id="btn-">
+                        <br>
+                        <input type="button" value="7" id="btn7">
+                        <input type="button" value="8" id="btn8">
+                        <input type="button" value="9" id="btn9">
+                        <input type="button" value="*" id="btn*">
+                        <br>
+                        <input type="button" value="0" id="btn0">
+                        <input type="button" value="." id="btnDot">
+                        <input type="button" value="=" id="btn=">
+                        <input type="button" value="/" id="btn/">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
