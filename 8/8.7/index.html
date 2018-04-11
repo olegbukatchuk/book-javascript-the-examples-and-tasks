@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Листинг 8.7</title>
+        <script type="text/javascript">
+            document.onmousemove = function(evt) {
+                var d = document.getElementsByTagName("div")[0];
+                var txt = "<b>Координаты курсора мыши</b><br>";
+                txt += "Горизонтальная координата: <b>" + evt.clientX + "</b><br>";
+                txt += "Вертикальная координата: &nbsp&nbsp&nbsp<b>" + evt.clientY + "</b>";
+                d.innerHTML = txt;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Листинг 8.7</h3><hr>
+        <div style="width:280px;height:80px;border-style:outset;font-size:15pt;padding:10px;backgroun d-color:#f5f5f5;">
+            <b>Координаты курсора мыши</b>
+        </div>
+    </body>
+</html>
