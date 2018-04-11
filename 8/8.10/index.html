@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Листинг 8.9</title>
+        <script type="text/javascript">
+            window.onload=function() {
+                document.getElementById("divRed").onclick = function(evt) {
+                    showColor("Красный");
+                    evt.stopPropagation();
+                };
+                document.getElementById("divYellow").onclick = function() {
+                    showColor("Жёлтый");
+                };
+                document.getElementById("divGreen").addEventListener("click", function() {
+                    showColor("Зелёный");
+                    }, true);
+            };
+            function showColor(clr) {
+                var txt = "<b>" + clr + "</b><br>";
+                document.getElementById("result").innerHTML += txt;
+            }
+        </script>
+    </head>
+    <body>
+    <h3>Листинг 8.10</h3><hr>
+        <div id="divGreen" style="width:200px;height:200px;background-color:green;">
+            <div id="divYellow" style="width:140px;height:140px;background-color:yellow;">
+                <div id="divRed" style="width:80px;height:80px;background-color:red;"> </div>
+            </div>
+        </div>
+        <p id="result" style="width:170px;height:70px;border-style:ridge;padding:10px;"></p>
+    </body>
+</html>
