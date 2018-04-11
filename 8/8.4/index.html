@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Листинг 8.4</title>
+        <script type="text/javascript">
+            var fileNames = ["fox.jpg", "raccoon.jpg", "wolf.jpg"];
+            var animals = ["Лиса","Енот","Волк"];
+            var fox="Рыжая лисья шубка<br>Очень многим нравиться.<br>И хоть лиса - плутовка,<br>Но она ещё и красавица!";
+            var raccoon = "Домашний енот - милашка,<br>А ещё он большой чистюля:<br>Легко постирает рубашку<br>Или помоет кастрюлю.";
+            var wolf = "Он сильный и выносливый,<br>Но скучно одному,<br>И волк от одиночества<br>Воет на луну.";
+            var text = [fox, raccoon, wolf];
+            var path = "../images/";
+            var lst, mytext, pict;
+            window.onload = function() {
+                lst = document.getElementById("mylist");
+                pict = document.getElementById("mypict");
+                mytext = document.getElementsByTagName("p")[0];
+                for (var k = 0; k < animals.length; k++) {
+                    lst.options[k] = new Option(animals[k], "Знакомьтесь - это " + animals[k].toLowerCase());
+                }
+                lst.onchange = function() {
+                    pict.src = path + fileNames[lst.selectedIndex];
+                    pict.title = lst.value;
+                    mytext.innerHTML = text[lst.selectedIndex];
+                };
+                var i = 1;
+                lst.options[i].selected = true;
+                pict.src = path + fileNames[i];
+                pict.title = lst.value;
+                mytext.innerHTML = text[i];
+            }
+        </script>
+        <style type="text/css">
+            select {
+                font-family: Times New Roman;
+                font-size: 14pt;
+                font-style: italic;
+                font-weight: bold;
+                height: 100%;
+                width: 100%;
+                padding:1px 20px;
+            }
+        </style>
+    </head>
+    <body>
+    <h3>Листинг 8.4</h3><hr>
+    <table>
+        <tr>
+            <td style="width:280px;vertical-align:top;border-style:none;">
+                <table style="width:100%;">
+                    <tr>
+                        <td style="width:100%;border-style:outset;height:35px;padding:5px;">
+                            <select size="1" id="mylist"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-style:outset;height:110px;background-color:#f0f0f0;padding:10px;">
+                            <p style="font-size:12pt;font-family:Arial;font-weight:bold;"></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="width:200px;border-style:none;">
+                <img id="mypict" style="width:185px;height:185px;border-style:outset;">
+            </td>
+        </tr>
+    </table>
+    </body>
+</html>
