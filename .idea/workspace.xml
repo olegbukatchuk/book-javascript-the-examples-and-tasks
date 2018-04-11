@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cf63e5c-01d1-4210-8b87-b4d902ebcb88" name="Default" comment="" />
+    <list default="true" id="6cf63e5c-01d1-4210-8b87-b4d902ebcb88" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/8/8.2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/8/8.2/index.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,7 +18,11 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/8/8.2/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="761">
+              <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -188,12 +194,12 @@
       <workItem from="1521305894777" duration="1015000" />
       <workItem from="1522445304623" duration="1488000" />
       <workItem from="1522609413742" duration="4577000" />
-      <workItem from="1522695639003" duration="37325000" />
+      <workItem from="1522695639003" duration="39069000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58071000" />
+    <option name="totallyTimeSpent" value="59815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="605" y="0" width="1075" height="1050" extended-state="6" />
@@ -621,7 +627,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/8/8.2/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="761">
+          <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

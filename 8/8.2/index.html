@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Листинг 8.2</title>
+        <script type="text/javascript">
+            window.onload = function() {
+                var inFld, outFld, inStl, outStl;
+                outFld = document.getElementById("outField");
+                outStl = outFld.style;
+                outStl.height = "50px";
+                outStl.width = "400px";
+                outStl.backgroundColor = "white";
+                outStl.borderColor = "magenta";
+                outStl.borderBottomRightRadius = "30px";
+                outStl.borderTopLeftRadius = "30px";
+                outStl.borderWidth = "5px";
+                outStl.margin = "5px";
+                outStl.padding = "2px 10px 2px 10px";
+                outStl.letterSpacing = "7px";
+                outStl.fontFamily = "Times New Roman";
+                outStl.fontStyle = "italic";
+                outStl.fontWeight = "900";
+                outStl.color = "red";
+                outStl.fontSize = "18pt";
+                outFld.readOnly = true;
+                outFld.value = "";
+                inFld = document.getElementById("inField");
+                inStl = inFld.style;
+                inStl.height = "30px";
+                inStl.width = "400px";
+                inStl.borderWidth = "5px";
+                inStl.borderStyle = "dotted";
+                inStl.borderLeftColor = "#ff0000";
+                inStl.borderTopColor = "#00ff00";
+                inStl.borderRightColor = "#0000ff";
+                inStl.borderBottomColor = "#000000";
+                inStl.padding = "2px 10px 2px 10px";
+                inStl.margin = "5px";
+                inStl.fontSize = "15pt";
+                inStl.color = "blue";
+                inFld.value = "";
+                inFld.focus();
+                inFld.onkeyup = function() {
+                    outFld.value = this.value;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Листинг 8.2</h3><hr>
+        <p>Введенный в нижнее поле текст дублируется в верхнем поле.</p>
+        <input type="text" id="outField"><br>
+        <input type="text" id="inField">
+        <p>Введите текст в нижнее текстовое поле.</p>
+    </body>
+</html>
