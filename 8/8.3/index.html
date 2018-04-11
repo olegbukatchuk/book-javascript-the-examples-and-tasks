@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Листинг 8.3</title>
+        <script type="text/javascript">
+            var fitalic, fbold, family, fsize, fcolor, stext, tfamily, tstyle, tsize, tcolor;
+            function setRefs() {
+                stext = document.getElementById("sampleText");
+                fitalic = document.getElementById("italicFont");
+                fbold = document.getElementById("boldFont");
+                family = document.getElementsByName("fontFamily");
+                fsize = document.getElementById("fontSize");
+                fcolor = document.getElementById("fontColor");
+                tfamily = document.getElementById("A");
+                tstyle = document.getElementById("B");
+                tsize = document.getElementById("C");
+                tcolor = document.getElementById("D");
+            }
+            function setHandlers() {
+                fitalic.addEventListener("change",getStyle);
+                fbold.onchange = getStyle;
+                for (var k = 0; k < family.length; k++) {
+                    family[k].addEventListener("change",getFamily);
+                }
+                fsize.addEventListener("change",getSize);
+                fcolor.onchange = function() {
+                    getColor();
+                }
+            }
+            function getStyle() {
+                var txt = "";
+                if (fbold.checked) {
+                    stext.style.fontWeight = "bold";
+                    txt += " жирный";
+                } else {
+                    stext.style.fontWeight = "normal";
+                }
+                if (fitalic.checked) {
+                    stext.style.fontStyle = "italic";
+                    txt += " курсивный";
+                } else {
+                    stext.style.fontStyle = "normal";
+                }
+                if (txt == "") {
+                    txt = " обычный";
+                }
+                tstyle.innerHTML = txt;
+            }
+            function getFamily() {
+                for (var k = 0; k < family.length; k++) {
+                    if (family[k].checked) {
+                        stext.style.fontFamily = family[k].value;
+                        tfamily.innerHTML = family[k].value;
+                        return;
+                    }
+                }
+            }
+            function getSize() {
+                stext.style.fontSize = fsize.value + "pt";
+                tsize.innerHTML = fsize.value;
+            }
+            function getColor() {
+                stext.style.color = fcolor.value;
+                tcolor.innerHTML = convertColor(fcolor.value);
+            }
+            function convertColor(clr) {
+                if (clr == "red") {
+                    return "красный";
+                }
+                if (clr =="blue") {
+                    return "синий";
+                }
+                if (clr == "green") {
+                    return "зелёный";
+                }
+            }
+            function set() {
+                setRefs();
+                fitalic.checked = false;
+                fbold.checked = false;
+                family[0].checked = true;
+                fsize[0].selected = true;
+                fcolor[0].selected = true;
+                setHandlers();
+                getStyle();
+                getFamily();
+                getSize();
+                getColor(); ̀
+            }
+        </script>
+        <style type="text/css">
+            td {
+                width: 30%;
+                background-color: #fcfcfc;
+                vertical-align: top;
+                font-size: 15pt;
+                border-style: ridge;
+                padding: 10px;
+            }
+            #sampleText {
+                border: outset;
+                border-width: 5px;
+                border-color: gray;
+                text-align: center;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body onload="set()">
+    <h3>Листинг 8.3</h3><hr>
+    <p id="sampleText">
+        Используется шрифт <span id="A"></span>,
+        стиль -<span id="B"></span>,
+        размер <span id="C"></span>,
+        цвет - <span id="D"></span>.
+    </p>
+    <table style="width:100%;">
+        <tr>
+            <td>
+                <b>Стиль шрифта</b><br><br>
+                <input type="checkbox" id="boldFont">Жирный шрифт<br>
+                <input type="checkbox" id="italicFont">Курсивный шрифт</td>
+            <td>
+                <b>Тип шрифта</b><br><br>
+                <input type="radio" name="fontFamily" value="Times New Roman">Шрифт Times<br>
+                <input type="radio" name="fontFamily" value="Arial">Шрифт Arial<br>
+                <input type="radio" name="fontFamily" value="Courier New">Шрифт Courier</td>
+            <td>
+                <b>Размер шрифта̀</b><br>
+                Шрифт размера
+                <select size="1" id="fontSize" style="font-size:11pt;font-weight:900;">
+                    <option value="15">15</option>
+                    <option value="18">18</option>
+                    <option value="20">20</option>
+                    <option value="22">22</option>
+                    <option value="25">25</option>
+                </select><br><br>
+                <b>Цвет шрифта</b><br>
+                <select size="3" id="fontColor" style="font-size:12pt;">
+                    <option value="red">Красный цвет</option>
+                    <option value="blue">Синий цвет</option>
+                    <option value="green">Зелёный цвет</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    </body>
+</html>
