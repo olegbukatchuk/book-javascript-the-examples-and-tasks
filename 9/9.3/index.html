@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Листинг 9.3</title>
+        <script type="text/javascript">
+            var txt="О сколько нам открытий чудных<br>";
+            txt += "Готовят просвященья дух<br>";
+            txt += "И опыт, сын ошибок трудных,<br>";
+            txt += "И гений, парадоксов друг,<br>";
+            txt += "И случай, бог изобретатель...<br>";
+            txt += "А.С. Пушкин";
+            var n = 0;
+            var ref;
+            function writeText() {
+                var time;
+                ref.innerHTML = txt.substring(0, n);
+                if (n < txt.length) {
+                    n++;
+                    time = 500;
+                } else {
+                    n = 0;
+                    time = 4000;
+                }
+                setTimeout(writeText, time);
+            }
+            window.onload = function() {
+                ref = document.getElementById("mytext");
+                writeText();
+            }
+        </script>
+        <style type="text/css">
+            #mytext {
+                height: 150px;
+                width: 320px;
+                border: solid;
+                border-color: silver;
+                border-width: 3px;
+                font-family: Times New Roman;
+                font-size: 16pt;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Листинг 9.3</h3><hr>
+        <div id="mytext"></div>
+    </body>
+</html>

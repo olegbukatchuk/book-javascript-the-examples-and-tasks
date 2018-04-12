@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Листинг 9.4</title>
+        <script type="text/javascript">
+            var timerID;
+            var Nx = 200, Ny = 100;
+            var dz = 3;
+            var list;
+            var start, conf;
+            var nameA = "Начать";
+            var nameB = "Остановить";
+            var cnv, ctx;
+            var A;
+            function init(B) {
+                var i, j, p;
+                p = list.value;
+                for (i = 0; i < B.length; i++) {
+                    for (j = 0; j < B[i].length; j++) {
+                        if (Math.random() < p) {
+                            B[i][j] = 1;
+                        } else {
+                            B[i][j] = 0;
+                        }
+                    }
+                }
+            }
+            function getState(B, i, j) {
+                var im, ip, jm, jp, r;
+                if (i > 0) {
+                    im = i - 1;
+                } else {
+                    im = B.length - 1;
+                }
+                if (i < B.length - 1) {
+                    ip = i + 1;
+                } else {
+                    ip = 0;
+                }
+                if (j > 0) {
+                    jm = j - 1;
+                } else {
+                    jm = B[i].length - 1;
+                }
+                if (j < B[i].length - 1) {
+                    jp = j + 1;
+                } else {
+                    jp = 0;
+                }
+                r = B[i][jm] + B[i][jp] + B[im][j] + B[ip][j] + B[im][jm] + B[ip][jp] + B[im][jp] + B[ip][jm];
+                return r;
+            }
+            function recalc(B) {
+                var nbs;
+                var C = new Array(B.length);
+                for (var i = 0; i < C.length; i++) {
+                    C[i] = new Array(B[i].length);
+                    for (var j = 0; j < C[i].length; j++) {
+                        nbs = getState(B, i, j);
+                        if (B[i][j] == 0) {
+                            if (nbs == 3) {
+                                C[i][j] = 1;
+                            } else {
+                                C[i][j] = 0;
+                            }
+                        } else {
+                            if ((nbs == 2) || (nbs == 3)) {
+                                C[i][j] = 1;
+                            } else {
+                                C[i][j] = 0;
+                            }
+                        }
+                    }
+                }
+                return C;
+            }
+            function show(B) {
+                ctx.clearRect(0, 0, cnv.width, cnv.height);
+                ctx.fillStyle = "blue";
+                for (var i = 0; i < B.length; i++) {
+                    for (var j = 0; j < B[i].length; j++) {
+                        if (B[i][j] == 1) {
+                            ctx.fillRect(dz * j, dz * i, dz, dz)
+                        }
+                    }
+                }
+            }
+            function showNext() {
+                A = recalc(A);
+                show(A);
+            }
+            function config() {
+                init(A);
+                show(A);
+            }
+            window.onload = function() {
+                cnv = document.getElementById("mycanvas");
+                cnv.width = Nx * dz;
+                cnv.height = Ny * dz;
+                document.getElementById("myform").style.width = cnv.width - 10 + "px";
+                ctx = cnv.getContext("2d");
+                conf = document.getElementById("conf");
+                conf.disabled = false;
+                start = document.getElementById("start");
+                start.value = nameA;
+                list = document.getElementById("prob");
+                list.disabled = false;
+                var index = 1;
+                list.selectedIndex = index;
+                A = new Array(Ny);
+                for (var k = 0; k < A.length; k++) {
+                    A[k] = new Array(Nx);
+                }
+                config();
+                conf.onclick = config;
+                list.onchange = conf.onclick;
+                start.onclick = function() {
+                    if (this.value == nameA) {
+                        list.disabled = true;
+                        conf.disabled = true;
+                        this.value = nameB;
+                        timerID = setInterval(showNext, 100);
+                    } else {
+                        list.disabled = false;
+                        conf.disabled = false;
+                        this.value = nameA;
+                        clearInterval(timerID);
+                    }
+                }
+            }
+        </script>
+        <style type="text/css">
+            #myform {
+                height: 30px;
+                border-style: outset;
+                padding: 5px;
+                background-color: #f0f0f0;
+                font-size: 17px;
+            }
+            #myform input[type="button"] {
+                font-weight: bold;
+                height: 30px;
+            }
+            #myform select {
+                height: 30px;
+                border-color: silver;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Листинг 9.4</h3><hr>
+        <form id="myform">
+            <b>Вероятность</b>
+            <select size="1" id="prob">
+                <option value="0.1">0.10</option>
+                <option value="0.2">0.20</option>
+                <option value="0.3">0.30</option>
+                <option value="0.5">0.50</option>
+                <option value="0.75">0.75</option>
+            </select>
+            <input type="button" id="conf" value="Íîâàÿ êîíôèãóðàöèÿ">
+            <input type="button" id="start" style="width:120px;">
+        </form>
+        <canvas id="mycanvas" style="border:ridge;"></canvas>
+    </body>
+</html>
